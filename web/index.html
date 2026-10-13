@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="A little apology, made with love.">
+  <title>A little note, from Medo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="content.js" defer></script>
+  <script src="scroll.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#apology">Skip to the note</a>
+  <nav class="page-nav" aria-label="Page sections">
+    <span class="nav-signature">for you, always</span>
+    <div class="nav-dots">
+      <button class="nav-dot" type="button" data-scroll-target="apology" aria-label="Go to apology" aria-current="true"></button>
+      <button class="nav-dot" type="button" data-scroll-target="memories" aria-label="Go to memories"></button>
+      <button class="nav-dot" type="button" data-scroll-target="gift" aria-label="Go to gift"></button>
+    </div>
+    <span class="nav-count" aria-hidden="true"><span data-current-step>01</span> / 03</span>
+  </nav>
+
+  <main id="main-content">
+    <section class="scene scene--apology" id="apology" aria-labelledby="apology-title">
+      <div class="photo photo--hero photo--hero-left" data-photo-frame="portrait_1">
+        <img data-photo="portrait_1" alt="A favorite photo together" loading="eager">
+        <span class="photo-placeholder" aria-hidden="true">your photo</span>
+      </div>
+      <div class="photo photo--hero photo--hero-right" data-photo-frame="landscape_1">
+        <img data-photo="landscape_1" alt="A favorite moment together" loading="eager">
+        <span class="photo-placeholder" aria-hidden="true">your photo</span>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow" data-text="eyebrow">A little note, from Medo</p>
+        <h1 id="apology-title" data-text="headline">I’m sorry.</h1>
+        <p class="hero-message" data-text="apology_message">I should have listened more carefully. You matter to me, and I’m sorry for the ways I hurt you. I want to understand, make things right, and show you with my actions how much I care.</p>
+        <p class="hero-note" data-text="hero_note">No excuses — just a real apology, and a lot of love.</p>
+      </div>
+
+      <button class="scroll-cue" type="button" data-scroll-target="memories" aria-label="Scroll down to the memories">
+        <span>Scroll</span><span class="scroll-arrow" aria-hidden="true">↓</span>
+      </button>
+      <span class="scene-index" aria-hidden="true">01 — 03</span>
+    </section>
+
+    <section class="scene scene--memories" id="memories" aria-labelledby="memory-title">
+      <div class="memory-grid">
+        <div class="memory-photos memory-photos--left">
+          <figure class="photo photo--memory photo--memory-small" data-photo-frame="landscape_2">
+            <img data-photo="landscape_2" alt="A memory together" loading="lazy">
+            <span class="photo-placeholder" aria-hidden="true">your photo</span>
+          </figure>
+          <figure class="photo photo--memory photo--memory-detail" data-photo-frame="landscape_3">
+            <img data-photo="landscape_3" alt="A little moment worth remembering" loading="lazy">
+            <span class="photo-placeholder" aria-hidden="true">your photo</span>
+          </figure>
+        </div>
+        <div class="memory-copy">
+          <p class="eyebrow">A few things I mean</p>
+          <h2 id="memory-title" data-text="memory_heading">The little things mean everything.</h2>
+          <div class="note-card">
+            <span class="note-mark" aria-hidden="true">01</span>
+            <p data-text="memory_top">I’m grateful for every laugh, every quiet moment, and all the memories we’ve made together.</p>
+          </div>
+          <div class="note-card">
+            <span class="note-mark" aria-hidden="true">02</span>
+            <p data-text="memory_bottom">You deserve patience, honesty, and care. I want to keep showing up for you that way.</p>
+          </div>
+        </div>
+        <figure class="photo photo--memory photo--memory-tall" data-photo-frame="landscape_4">
+          <img data-photo="landscape_4" alt="A favorite photo together" loading="lazy">
+          <span class="photo-placeholder" aria-hidden="true">your photo</span>
+        </figure>
+      </div>
+      <button class="scroll-cue" type="button" data-scroll-target="gift" aria-label="Scroll down to your gift">
+        <span>Keep going</span><span class="scroll-arrow" aria-hidden="true">↓</span>
+      </button>
+      <span class="scene-index" aria-hidden="true">02 — 03</span>
+    </section>
+
+    <section class="scene scene--gift" id="gift" aria-labelledby="gift-title">
+      <div class="gift-grid">
+        <figure class="photo photo--gift-side" data-photo-frame="portrait_2">
+          <img data-photo="portrait_2" alt="A favorite photo together" loading="lazy">
+          <span class="photo-placeholder" aria-hidden="true">your photo</span>
+        </figure>
+        <div class="gift-content">
+          <div class="gift-copy">
+            <p class="eyebrow">One more thing</p>
+            <h2 id="gift-title" data-text="gift_heading">A little something for you.</h2>
+            <p data-text="gift_description">A small reminder that I care about you, and that I’m trying.</p>
+          </div>
+          <div class="gift-player" id="gift-player">
+            <canvas class="heart-canvas" id="heart-canvas" aria-label="A heart made of little red strokes"></canvas>
+            <div class="gift-cover" id="gift-cover">
+              <span class="cover-kicker">A small surprise</span>
+              <button class="play-button" id="play-gift" type="button" aria-label="View gift and play the heart animation">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.8v12.4L18 12 8 5.8Z"/></svg>
+              </button>
+              <span class="cover-label" data-text="gift_button">View gift</span>
+            </div>
+            <p class="animation-caption" id="animation-caption" aria-live="polite" data-text="animation_complete">For you, with all my heart.</p>
+          </div>
+        </div>
+      </div>
+      <footer class="page-footer" data-text="footer_text">Made with love &amp; sorry — your boyfriend, Medo.</footer>
+      <button class="scroll-cue scroll-cue--top" type="button" data-scroll-target="apology" aria-label="Back to the beginning">
+        <span>Back to top</span><span class="scroll-arrow" aria-hidden="true">↑</span>
+      </button>
+      <span class="scene-index" aria-hidden="true">03 — 03</span>
+    </section>
+  </main>
+</body>
+</html>
